@@ -37,13 +37,12 @@ def main():
     print(*column_get, sep='\t ')
     print()
 
-    total_kota = int(input('Total Kota: '))
-    for x in range(0, total_kota):
-        selected_column.append(input(f'Kota {x+1}: ').upper())
-    print()
+    selected_column.append('JAKARTA')
+    selected_column.append('JABAR')
+    selected_column.append('NASIONAL')
 
-    start_date = input('Start Date (YYYY-MM-DD): ')
-    end_date = input('End Date (YYYY-MM-DD): ')
+    start_date = '2021-01-01'
+    end_date = '2021-01-31'
     print()
 
     print('Total Positif Covid-19')
